@@ -11,6 +11,11 @@ public class UrlResponse {
 		this.originalUrl = originalUrl;
 		this.shortUrl = shortUrl;
 	}
+	
+	public UrlResponse()
+	{
+		
+	}
 
 	public String getOriginalUrl() {
 		return originalUrl;

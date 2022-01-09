@@ -16,6 +16,11 @@ public class UrlDto {
 		super();
 		this.url = url;
 	}
+	
+	public UrlDto()
+	{
+		
+	}
 
 	@Override
 	public String toString() {

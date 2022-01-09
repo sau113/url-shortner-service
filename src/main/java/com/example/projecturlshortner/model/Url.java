@@ -38,6 +38,11 @@ public class Url {
 		this.originalUrl = originalUrl;
 		this.shortUrl = shortUrl;
 	}
+	
+	public Url()
+	{
+		
+	}
 
 	@Override
 	public String toString() {

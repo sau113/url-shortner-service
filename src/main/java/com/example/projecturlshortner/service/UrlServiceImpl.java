@@ -1,5 +1,7 @@
 package com.example.projecturlshortner.service;
 
+import java.nio.charset.StandardCharsets;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -36,7 +38,7 @@ public class UrlServiceImpl implements UrlService {
 		String encodedUrl = "";
 		
 		encodedUrl = Hashing.murmur3_32_fixed()
-				.hashString(encodedUrl, Charsets.UTF_8).toString(); 
+				.hashString(url, StandardCharsets.UTF_8).toString(); 
 		
 		return encodedUrl;
 	}
